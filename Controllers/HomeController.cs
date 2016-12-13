@@ -13,12 +13,32 @@ namespace BaseCampCodingAcademy.Controllers
             return View();
         }
 
+        [Route("about")]
         public IActionResult About()
         {
             return View();
         }
 
+        [Route("contact")]
         public IActionResult Contact()
+        {
+            return View();
+        }
+
+        [Route("sponsors")]
+        public IActionResult Sponsors()
+        {
+            return View();
+        }
+
+        [Route("news-press")]
+        public IActionResult NewsAndPress()
+        {
+            return View();
+        }
+
+        [Route("student-portfolios")]
+        public IActionResult StudentPortfolios()
         {
             return View();
         }
