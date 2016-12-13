@@ -67,6 +67,11 @@ footer {
     margin: 50px 0;
 }
 
+/* Make the background of the navbar the BCCA brown */
+.navbar-inverse {
+    background-color: #3b1b0c !important;
+}
+
 /* Hide/rearrange for smaller screens */
 @media screen and (max-width: 767px) {
   /* Hide captions */
