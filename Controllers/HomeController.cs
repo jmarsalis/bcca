@@ -43,8 +43,8 @@ namespace BaseCampCodingAcademy.Controllers
             return View();
         }
 
-        [Route("nondiscrimination-policy")]
-        public IActionResult NondiscriminationPolicy()
+        [Route("nondiscriminatory-policy")]
+        public IActionResult NondiscriminatoryPolicy()
         {
             return View();
         }
