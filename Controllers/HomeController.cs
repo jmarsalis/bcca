@@ -49,6 +49,18 @@ namespace BaseCampCodingAcademy.Controllers
             return View();
         }
 
+        [Route("apply")]
+        public IActionResult Apply()
+        {
+            return Redirect("http://goo.gl/forms/TCZqJGyiOD");
+        }
+
+        [Route("nominate")]
+        public IActionResult Nominate()
+        {
+            return Redirect("http://goo.gl/forms/MCLxyI4i1r");
+        }
+
         [Route("error")]
         public IActionResult Error()
         {
