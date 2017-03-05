@@ -52,7 +52,6 @@
 
   "publishOptions": {
     "include": [
-      "scripts",
       "wwwroot",
       "**/*.cshtml",
       "appsettings.json",
