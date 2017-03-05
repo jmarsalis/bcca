@@ -9,6 +9,7 @@ branches:
 before_script:
   - npm install -g bower
   - chmod a+x ./scripts/build.sh
+  - chmod a+x ./scripts/restart-website.sh
 script:
   - ./scripts/build.sh --quiet verify
 before_deploy:
