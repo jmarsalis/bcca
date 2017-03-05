@@ -1,0 +1,5 @@
+version: 0.0
+os: linux
+files:
+  - source: /tmp/build-artifacts/bcca   # the artifacts folder from build.sh
+    destination: /var/www/bcca          # the destiation on the ec2 instance
