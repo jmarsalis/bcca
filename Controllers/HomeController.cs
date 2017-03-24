@@ -19,6 +19,12 @@ namespace BaseCampCodingAcademy.Controllers
             return View();
         }
 
+        [Route("curriculum")]
+        public IActionResult Curriculum()
+        {
+            return View();
+        }
+
         [Route("contact")]
         public IActionResult Contact()
         {

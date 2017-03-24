@@ -79,3 +79,7 @@ footer {
     display: none
   }
 }
+
+#curriculum .row {
+    margin-top: 50px;
+}
