@@ -19,12 +19,6 @@ namespace BaseCampCodingAcademy.Controllers
             return View();
         }
 
-        [Route("curriculum")]
-        public IActionResult Curriculum()
-        {
-            return View();
-        }
-
         [Route("contact")]
         public IActionResult Contact()
         {
@@ -45,6 +39,18 @@ namespace BaseCampCodingAcademy.Controllers
 
         [Route("student-portfolios")]
         public IActionResult StudentPortfolios()
+        {
+            return View();
+        }
+
+        [Route("curriculum")]
+        public IActionResult Curriculum()
+        {
+            return View();
+        }
+
+        [Route("curriculum-details")]
+        public IActionResult CurriculumDetails()
         {
             return View();
         }
