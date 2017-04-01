@@ -67,6 +67,12 @@ namespace BaseCampCodingAcademy.Controllers
             return Redirect("http://goo.gl/forms/MCLxyI4i1r");
         }
 
+        [Route("fundraiser")]
+        public IActionResult Fundraiser()
+        {
+            return Redirect("https://www.eventbrite.com/e/base-camp-coding-academy-2017-fundraising-celebration-tickets-32951816771");
+        }
+
         [Route("error")]
         public IActionResult Error()
         {
