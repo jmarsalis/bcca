@@ -76,7 +76,7 @@ namespace BaseCampCodingAcademy.Controllers
         [Route("fundraiser")]
         public IActionResult Fundraiser()
         {
-            return Redirect("https://www.eventbrite.com/e/base-camp-coding-academy-2017-fundraising-celebration-tickets-32951816771");
+            return Redirect("https://www.eventbrite.com/e/base-camp-coding-academy-2018-fundraising-celebration-tickets-44278725861");
         }
 
         [Route("error")]
