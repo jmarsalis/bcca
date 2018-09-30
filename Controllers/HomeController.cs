@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
+using System.Runtime.Versioning;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
@@ -82,6 +84,28 @@ namespace BaseCampCodingAcademy.Controllers
         [Route("error")]
         public IActionResult Error()
         {
+            return View();
+        }
+
+        [Route("version")]
+        public IActionResult Version()
+        {
+            var framework = Assembly
+                .GetEntryAssembly()?
+                .GetCustomAttribute<TargetFrameworkAttribute>()?
+                .FrameworkName;
+
+            /* 
+            var stats = new
+            {                
+                OsPlatform = System.Runtime.InteropServices.RuntimeInformation.OSDescription,
+                AspDotnetVersion = framework
+            };
+            */
+
+            ViewData["OsPlatform"] = System.Runtime.InteropServices.RuntimeInformation.OSDescription;
+            ViewData["AspDotNetVersion"] = framework;
+
             return View();
         }
     }
